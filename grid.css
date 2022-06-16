@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+  body{
+    place-content: center;
+    display: flex;
+    background-color: black;
+    
+}
+  main{
+      display:grid;
+      grid-template-areas: 
+      'a a a a a b b'
+      'a a a a a b b'
+      'c c c d d d d'
+      'c c c e e e e'
+      ;
+      gap: 10px;
+      margin-top: 200px;
+      height: 300px;
+      width:400px;
+      background-color: rgba(8, 2, 30, 0.823);
+      padding-top: 20px;
+      padding-left: 40px;
+      padding-right: 100px;
+      padding-bottom: 30px;
+
+  }
+  main div{
+      text-align: center;
+      padding: 10px;
+      color: none;    
+  }
+  .block1{
+      background-color: orangered;
+      grid-area: a;
+  }
+  .block2{
+      background-color: orange;
+      grid-area: b;
+  
+  }
+  .block3{
+      background-color: green;
+      grid-area: c;
+  }
+  .block4{
+      background-color: aqua;
+      grid-area: d;
+  }
+  .block5{
+      background-color: aquamarine;
+      grid-area: e;
+  }
